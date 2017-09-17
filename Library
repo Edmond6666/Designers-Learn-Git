@@ -1,0 +1,123 @@
+import java.util.*;
+
+public class Library {
+   private Catalogue catalogue; 
+   private List<Patron> patrons = new LinkedList<Patron>(); 
+
+   public static void main(String[] args) { 
+       new Library().use();
+    }
+public Library() {
+    this.catalogue = catalogue;
+    
+.gitattributes}
+
+public void use() {
+    char choice;
+    while ((choice = readChoice()) != 'X') {
+         switch (choice) {
+        case'1': catalogueMenu(); break;
+        case'2': patron(); break;
+        case'3': book(); break;
+        case'4': admin(); break;
+        default: help(); break;
+         }
+    } 
+}
+private char readChoice() {
+        System.out.println("Welcome to the Library! Please make a selection from the menu: ");
+        System.out.println("1. Explore the catalogue.");
+        System.out.println("2. View your patron record.");
+        System.out.println("3. Show you favourite books.");
+        System.out.println("4. Enter Admin Mode.");
+        System.out.println("X. Exit the system.");
+        System.out.print("Enter a choice: ");
+        return In.nextChar();
+    }
+
+private void readCatalogueMenu() {
+       System.out.println("Welcome to the Catalogue! Please make a selection from the menu: ");
+       System.out.println("1. Display all books.");                
+       System.out.println("2. Display all available books.");            
+       System.out.println("3. Display all genres.");             
+       System.out.println("4. Display books in a genre.");      
+       System.out.println("5. Display all authors.");      
+       System.out.println("6. Display all books by an author.");           
+       System.out.println("7. Borrow a book.");   
+       System.out.println("8. Return a book.");     
+       System.out.println("9. Place a hold.");  
+       System.out.println("R. Return to previous menu."); 
+       System.out.print("Enter a choice: ");
+    }
+
+
+public void catalogueMenu() {
+    readCatalogueMenu();
+        char choice = In.nextChar();
+        while (choice != 'R') {
+            switch (choice) {
+            case'1': break;
+            case'2': break;
+            case'3': break;
+            case'4': break;
+            case'5': break;
+            case'6': break;
+            case'7': break;
+            case'8': break;
+            case'9': break;
+            case'R': break;
+            }
+readCatalogueMenu();            
+
+            }
+}
+
+private void patron() {
+   
+}
+
+private int readID() {
+    System.out.print("Enter a patron ID: ");
+    return In.nextInt();
+}
+
+private void book() {
+    
+}
+
+private void adminMenu() {
+System.out.println("Welcome to the administration menu: ");
+System.out.println("1. Add a patron. ");
+System.out.println("2. Remove a patron. ");
+System.out.println("3. Add a book to the catalogue.");
+System.out.println("4. Remove a book from the catalogue.");
+System.out.println("R. Return to the previous menu.");
+System.out.print("Enter a choice: ");
+}
+
+private void admin() {
+    adminMenu();
+   char choice = In.nextChar();
+        while (choice != 'R') {
+            switch (choice) {
+            case'1': break;
+            case'2': break;
+            case'3': break;
+            case'4': break;
+            case'R': break;
+            } 
+        }
+        
+}
+    
+ private void help() {
+        System.out.println("Enter a choice: ");
+        System.out.println("1 = catalogueMenu");
+        System.out.println("2 = patron");
+        System.out.println("3 = book");
+        System.out.println("4 = admin");
+        System.out.println("X = exit");
+    }
+ 
+ 
+}
