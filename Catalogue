@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Catalogue {
+        private Library library;
+        private List<Book> booksOnShelf = new LinkedList<Book>();
+        private List<Book> booksOnLoan = new LinkedList<Book>();
+        private List<Genre> genres = new LinkedList<Genre>();
+        private List<Author> authors = new LinkedList<Author>();
+        
+     public Catalogue() {
+         library = new Library();
+         
+     }
+ }
+
+
+Book
+
+import java.util.*;
+ public class Book {
+               private String title;
+               private Author author;
+               private Genre genre;
+               private List<Patron> holds = new LinkedList<Patron>();
+
+public Book (String title, Author author, Genre genre) {
+      this.title = title;
+      this.author = author;
+      this.genre = genre;
+   }
+ }
